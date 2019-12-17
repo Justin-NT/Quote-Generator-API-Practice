@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-flow: column wrap;
+  background: url("./assets/book-background-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+header {
+  margin: auto;
+  max-height: 10vh;
+  max-width: 60vw;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  font-family: "Signika", sans-serif;
+  color: black;
+  font-size: 3em;
+}
+
+#img-container {
+  background-color: cadetblue;
+  margin: auto;
+  max-width: 60vw;
+  max-height: 80vh;
+  display: flex;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#quote-container {
+  width: 100vw;
+  max-height: 150vh;
+  display: flex;
+  flex-flow: wrap column;
+  align-content: center;
+}
+
+#quotes {
+  max-width: 80vw;
+  max-height: 50vh;
+  text-align: center;
+  color: black;
+  font-family: "Lucidatypewriter", monospace;
+  font-size: 1.5em;
+  justify-self: center;
+  font-style: italic;
+}
+
+#buttons-container {
+  width: 30vw;
+  max-height: 40vh;
+  display: flex;
+  align-self: center;
+  margin: 3vh 0 1vh 0;
+  flex-direction: column;
+}
+
+#saved-quotes {
+  max-height: 110vh;
+  max-width: 80vw;
+  font-size: 1.3em;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+#saved-quotes-title {
+  text-align: center;
+  font-size: 1.4em;
+  text-decoration: underline black;
+}
+
+.buttons {
+  min-width: 5vw;
+  max-width: 10vw;
+  max-height: 20vh;
+  border: 1px solid black;
+  color: black;
+  margin-bottom: 1vw;
+  cursor: pointer;
+  font: bold 13px arial, helvetica, sans-serif;
+  text-decoration: none;
+  background-color: darksalmon;
+  align-self: center;
+  text-align: center;
+}
+
+.buttons:hover {
+  box-shadow: -1px 1px 1px black;
+}
+
+@media (max-width: 650px) {
+  header {
+    font-size: 1.8em;
+    margin-bottom: 5vh;
+  }
+  #quotes {
+    font-size: 1em;
+  }
+  #saved-quotes-title {
+    font-size: 1em;
+  }
+  #saved-quotes {
+    font-size: 1em;
+  }
+  .buttons {
+    font-size: 45%;
+    min-width: 15vw;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    margin-bottom: 7vh;
+  }
+}
+
+/* The MVP is done. Things to touch up on if I have extra time are buttons and image scaling, button decorations, cleaner looking CSS, random whitespace at the bottom and only allowing one of the same quote*/

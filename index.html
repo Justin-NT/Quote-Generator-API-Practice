@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inspirational Quote Generator</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Title of the API -->
+    <header>
+      <span>Inspirational Quote Generator</span>
+    </header>
+
+    <!-- Image Section -->
+    <section id="img-container">
+      <img src="" class="img" />
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote-container">
+      <!-- Randomly generated quote section -->
+      <section id="quotes">
+        <!-- "This is an example of a randomly generated quote, just to see how it
+        scales in the container." -->
+      </section>
+      <!-- Event listener buttons -->
+      <section id="buttons-container">
+        <button class="buttons" id="new-quote">New Quote</button>
+        <button class="buttons" id="new-image">New Image</button>
+        <button class="buttons" id="save-quote">Save Quote</button>
+      </section>
+      <!-- Saved quotes section ** up to 5? -->
+      <section id="saved-quotes">
+        <h2 id="saved-quotes-title">Saved Quotes</h2>
+        <ul id="saved-list" style="margin: 0 0 1vh 4vw;"></ul>
+      </section>
+    </section>
+
+    <script src="./randomImageFetcher.js"></script>
+    <script src="./quoteFetcher.js"></script>
+  </body>
+</html>
